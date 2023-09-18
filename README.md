@@ -8,15 +8,7 @@ Each challenge has its own directory, which contains the challenge description, 
 
 ## Purpose
 
-Completing the Advent of Code challenges gave me a chance to add solid repository to my Github repertoire, which furthers my goal of showcasing my coding abilities for future employers. 
-
-I have made an effort to create solutions that are as organized, modular, efficient, and Pythonic as possible.
-
-I have made every attempt to showcase not only my proficiency with the language but also my awareness of Pythonic style, proper documentation and commenting, and usage of algorithms where appropriate.
-
-Adhering to programming best practices and creating readable, maintainable code is as important of writing code that does what it is supposed to.
-
-Also, if these solutions help future learners who are struggling with the challenges, I am glad to provide reference material.
+I created this repo as a way to show my Python abilities, as well as to help anyone struggling with any of the challenges.
 
 ---
 
@@ -28,4 +20,4 @@ Within each solution folder are several files:
 
 - `input.txt` : The input data for that challenge.
 
-- `day_[x].ipynb` : The code for the solution itself, in an interactive Jupyter notebook. 
+- `solution.ipynb` : The code for the solution itself, in an interactive Jupyter notebook. 
