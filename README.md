@@ -16,8 +16,25 @@ I created this repo as a way to show my Python abilities, as well as to help any
 
 Within each solution folder are several files:
 
-- `instructions.md` : Instructions for that challenge, copied and pasted directly from the webiste.
+### Instructions 
 
-- `input.txt` : The input data for that challenge.
+- **File:** `instructions.md`
+
+- **Purpose:** 
+    Instructions for that challenge, copied and pasted directly from the webiste.
+    
+    Includes links to the relevant Advent of Code webpages. 
+
+---
+
+- `input.txt` : The input data for that challenge, copied and pasted directly from the webpage and saved to a text file.
 
 - `solution.ipynb` : The code for the solution itself, in an interactive Jupyter notebook. 
+
+
+
+Notes on things I learned from this challenge, including 
+
+- useful built-in and 3rd party libraries
+- core language behavior and concepts 
+- the algorithmic solution, if applicable
