@@ -8,7 +8,9 @@ Each challenge has its own directory, which contains the challenge description, 
 
 ## Purpose
 
-I created this repo as a way to show my Python abilities, as well as to help anyone struggling with any of the challenges.
+I created this repo as a way to show my Python abilities to any future employers.
+
+Also, I hope someone will find iti  well as to help anyone struggling with any of the challenges.
 
 ---
 
