@@ -1,15 +1,23 @@
 # TODO
 
-Add functionality to the repo and update README file accordingly.
+---
+
+## TEMPLATES
+
+- [ ]   Create a templates folder to hold template files. Then create
+        a template file for each of the files included for each of the
+        files for each challenge: `input.txt`, `instructions.md`, and
+        `solution.ipynb`.
 
 ---
 
-## Hints
+## GENERATOR 
 
-Add a `hints.ipynb` file to each day's folder.
+- [ ]   Create a Jupyter notebook to auto-create the necessary files
+        for each challenge (e.g., `input.txt`, `instructions.md`, and
+        `solution.ipynb`.) The generator will use f-strings to update
+        the templates for `solution.ipynb` and `instructions.md`. As 
+        the `input.txt` file has no template, the generator will simply
+        create an empty file, `input.txt`.
 
-Also, add the following to the README file:
-
-```
-Because I believe in attempting to find solutions of your own accord, I have included within each solution directory a `hints.ipynb` file. I encourage any programmers looking for help with any of the challenges to first check out this file before going straight to the `solution.ipynb` file.
-```
+---
