@@ -8,29 +8,29 @@ with open(INPUT_FILE, 'r') as f:
 
 # PART I
 
-def find_packet_stream_start(stream):
+def find_packet_stream_start(stream, x):
     """Find the first chunk of four letters with no repeating letters."""
 
-    # Using stream[i:j] gives us a chunk of four letters at a time
-    j = 4
+    # Using stream[i:j] gives us a chunk of letters at a time
     i = 0
-
+    j = x
+    
     # Once j is one less than the length of the stream, we have
     # reached the final character in the stream's index
     while j < len(stream):
         chunk = stream[i:j]
 
-        # Save unique letters in each four letter chunk to this string
+        # Save unique letters in each chunk to this string
         uniques = ''
-        # Iterate through the letters in the four letter chunk
+        # Iterate through the letters in the chunk
         for letter in chunk:
             if letter not in uniques:
                 uniques += letter
 
         # Letters are only saved to uniques if they are unique,
-        # so if uniques does not have four letters, there was a
+        # so if uniques does not have j letters, there was a
         # repeating letter
-        if len(uniques) == 4:
+        if len(uniques) == x:
             # return final index of the stream where chunk was found
             return j
 
@@ -43,5 +43,8 @@ def find_packet_stream_start(stream):
     return -1
 
 
+
+
 if __name__ == '__main__':        
-    print(find_packet_stream_start(STREAM))
+    print(find_packet_stream_start(STREAM, 4))
+    print(find_packet_stream_start(STREAM, 14))

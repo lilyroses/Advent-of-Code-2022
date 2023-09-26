@@ -3,6 +3,9 @@
 from solution import find_packet_stream_start
 
 
+CHUNK_1 = 4
+CHUNK_2 = 14
+
 STREAM_1 = 'mjqjpqmgbljsphdztnvjfqwrcgsmlb'
 ANS_1_1 = 7
 ANS_1_2 = 19
@@ -24,34 +27,42 @@ ANS_5_1 = 11
 ANS_5_2 = 26
 
 
-def test_1():
-    """Test 1"""
-    assert find_packet_stream_start(STREAM_1) == ANS_1_1
-    assert find_packet_stream_start(STREAM_1) == ANS_1_2
+def test_1_1():
+    """Test 1, Part I"""
+    assert find_packet_stream_start(STREAM_1, CHUNK_1) == ANS_1_1
 
-def test_2():
-    """Test 2"""
-    assert find_packet_stream_start(STREAM_2) == ANS_2_1
-    assert find_packet_stream_start(STREAM_2) == ANS_2_2
+def test_1_2():
+    """Test 1, Part II"""
+    assert find_packet_stream_start(STREAM_1, CHUNK_2) == ANS_1_2
 
-def test_3():
-    """Test 3"""
-    assert find_packet_stream_start(STREAM_3) == ANS_3_1
-    assert find_packet_stream_start(STREAM_3) == ANS_3_2
+def test_2_1():
+    """Test 2, Part I"""
+    assert find_packet_stream_start(STREAM_2, CHUNK_1) == ANS_2_1
 
-def test_4():
-    """Test 4"""
-    assert find_packet_stream_start(STREAM_4) == ANS_4_1
-    assert find_packet_stream_start(STREAM_4) == ANS_4_2
+def test_2_2():
+    """Test 2, Part II"""
+    assert find_packet_stream_start(STREAM_2, CHUNK_2) == ANS_2_2
 
-def test_5():
-    """Test 5"""
-    assert find_packet_stream_start(STREAM_5) == ANS_5_1
-    assert find_packet_stream_start(STREAM_5) == ANS_5_2
+def test_3_1():
+    """Test 3, Part I"""
+    assert find_packet_stream_start(STREAM_3, CHUNK_1) == ANS_3_1
 
+def test_3_2():
+    """Test 3, Part II"""
+    assert find_packet_stream_start(STREAM_3, CHUNK_2) == ANS_3_2
 
-print(find_packet_stream_start(STREAM_1))
-print(find_packet_stream_start(STREAM_2))
-print(find_packet_stream_start(STREAM_3))
-print(find_packet_stream_start(STREAM_4))
-print(find_packet_stream_start(STREAM_5))
+def test_4_1():
+    """Test 4, Part I"""
+    assert find_packet_stream_start(STREAM_4, CHUNK_1) == ANS_4_1
+
+def test_4_2():
+    """Test 4, Part II"""
+    assert find_packet_stream_start(STREAM_4, CHUNK_2) == ANS_4_2
+
+def test_5_1():
+    """Test 5, Part I"""
+    assert find_packet_stream_start(STREAM_5, CHUNK_1) == ANS_5_1
+
+def test_5_2():
+    """Test 5, Part II"""
+    assert find_packet_stream_start(STREAM_5, CHUNK_2) == ANS_5_2
