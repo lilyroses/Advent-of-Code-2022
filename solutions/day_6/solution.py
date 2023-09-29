@@ -8,7 +8,7 @@ with open(INPUT_FILE, 'r') as f:
 
 # PART I
 
-def find_packet_stream_start(stream, x):
+def find_packet_marker(stream, x):
     """Find the first chunk of four letters with no repeating letters."""
 
     # Using stream[i:j] gives us a chunk of letters at a time
@@ -46,5 +46,5 @@ def find_packet_stream_start(stream, x):
 
 
 if __name__ == '__main__':        
-    print(find_packet_stream_start(STREAM, 4))
-    print(find_packet_stream_start(STREAM, 14))
+    print(find_packet_marker(STREAM, 4))
+    print(find_packet_marker(STREAM, 14))
