@@ -99,8 +99,6 @@ The overall structure of the project is as follows:
 │       └── test_find_packet_marker.py
 └── templates
     ├── generate_challenge_files.ipynb
-    ├── generate_challenge_files.py
-    ├── inprogress.ipynb
     ├── template_instructions.md
     └── template_solution.ipynb
 ```
