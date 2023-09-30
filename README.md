@@ -60,8 +60,6 @@ The overall structure of the project is as follows:
 ├── README.md
 ├── TODO.md
 ├── solutions
-│   ├── __init__.py
-│   ├── __pycache__
 │   ├── day_1
 │   │   ├── input.txt
 │   │   ├── instructions.md
@@ -83,8 +81,6 @@ The overall structure of the project is as follows:
 │   │   ├── instructions.md
 │   │   └── solution.ipynb
 │   ├── day_6
-│   │   ├── __init__.py
-│   │   ├── __pycache__
 │   │   ├── input.txt
 │   │   ├── instructions.md
 │   │   └── solution.py
@@ -93,8 +89,6 @@ The overall structure of the project is as follows:
 │   │   ├── instructions.md
 │   │   └── solution.py
 │   └── tests
-│       ├── __init__.py
-│       ├── __pycache__
 │       ├── test_day_6.py
 │       └── test_find_packet_marker.py
 └── templates
