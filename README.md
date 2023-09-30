@@ -55,7 +55,7 @@ Below is an outline of the project tree (created with the bash `tree` command - 
 
 The overall structure of the project is as follows:
 
-```bash
+```sh
 .
  * [solutions](./solutions)
    * [day_2](./solutions/day_2)
@@ -98,7 +98,7 @@ The overall structure of the project is as follows:
    * [generate_challenge_files.ipynb](./templates/generate_challenge_files.ipynb)
  * [README.md](./README.md)
  * [TODO.md](./TODO.md)
- ```
+```
 
 ---
 
