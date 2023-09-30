@@ -1,14 +1,21 @@
-# Advent of Code (2022)
-
-My Python 3 solutions for each of the 25 challenges for the Advent of Code event of 2022.
-
-Each challenge has its own directory, which contains the challenge description, input data, and solution. 
+# README
 
 ---
 
-### Project Description 
+## Python Solutions for the Advent of Code Event (2022)
 
-(From the [Advent of Code website](https://adventofcode.com/)):
+*!! Note: This repository is still a work in progress. - 10/01/23 !!*
+
+This repository will contain my Python (3) solutions for each of the 25 challenges for the Advent of Code event of 2022.
+
+Each challenge has its own directory, which contains the challenge description, input data for solving that challenge, and a solution written in Python.
+(See [Project Structure][#project-structure] for more information.)
+
+---
+
+## Project Description 
+
+(From the [Advent of Code website](https://adventofcode.com/day/1/) for the 2022 event):
 
 *Santa's reindeer typically eat regular reindeer food, but they need a lot of magical energy to deliver presents on Christmas.*
 
@@ -30,18 +37,85 @@ Each challenge has its own directory, which contains the challenge description, 
 
 ## Repository Purpose
 
-I created this repo as a way to show my Python abilities to any future employers.
+I created this repository for several reasons.
 
-Also, I hope someone will find iti  well as to help anyone struggling with any of the challenges.
+First, I wanted a way to showcase my growing knowledge of Python. 
+
+I also wished to provide solutions publicly that anyone struggling with the event may find helpful. 
+
+Finally, throughout the course of building this repository, I have decided to make writing these solutions an exercise in good programming practices, honing skills such as proper code documentation and robust unit testing.
 
 ---
 
 ## Project Structure
 
-Within each solution folder are several files:
+*!! Note: The project structure is subject to change as this repository is currently a work in progress. See [TODO][#todo] section for more information on pending updates. !!*
 
-- `instructions.md` : Instructions for that challenge, copied and pasted directly from the webiste. Also includes links to the relevant Advent of Code webpages. 
+Below is an outline of the project tree (created with the bash `tree` command - very useful!). Following that is a brief description of each.
 
-- `input.txt` : The input data for that challenge, copied and pasted directly from the webpage and saved to a text file.
+---
 
-- `solution.ipynb` : The code for the solution itself, in an interactive Jupyter notebook. 
+### Project Tree
+
+The overall structure of the project is as follows:
+
+```bash
+.
+ * [solutions](./solutions)
+   * [day_2](./solutions/day_2)
+     * [input.txt](./solutions/day_2/input.txt)
+     * [instructions.md](./solutions/day_2/instructions.md)
+     * [solution.ipynb](./solutions/day_2/solution.ipynb)
+   * [day_3](./solutions/day_3)
+     * [input.txt](./solutions/day_3/input.txt)
+     * [instructions.md](./solutions/day_3/instructions.md)
+     * [solution.ipynb](./solutions/day_3/solution.ipynb)
+   * [day_4](./solutions/day_4)
+     * [input.txt](./solutions/day_4/input.txt)
+     * [instructions.md](./solutions/day_4/instructions.md)
+     * [solution.ipynb](./solutions/day_4/solution.ipynb)
+   * [day_1](./solutions/day_1)
+     * [input.txt](./solutions/day_1/input.txt)
+     * [instructions.md](./solutions/day_1/instructions.md)
+     * [solution.ipynb](./solutions/day_1/solution.ipynb)
+   * [day_5](./solutions/day_5)
+     * [input.txt](./solutions/day_5/input.txt)
+     * [instructions.md](./solutions/day_5/instructions.md)
+     * [solution.ipynb](./solutions/day_5/solution.ipynb)
+   * [day_6](./solutions/day_6)
+     * [input.txt](./solutions/day_6/input.txt)
+     * [instructions.md](./solutions/day_6/instructions.md)
+     * [solution.py](./solutions/day_6/solution.py)
+   * [day_7](./solutions/day_7)
+     * [input.txt](./solutions/day_7/input.txt)
+     * [instructions.md](./solutions/day_7/instructions.md)
+     * [solution.py](./solutions/day_7/solution.py)
+   * [tests](./solutions/tests)
+     * [__init__.py](./solutions/tests/__init__.py)
+     * [__pycache__](./solutions/tests/__pycache__)
+     * [test_day_6.py](./solutions/tests/test_day_6.py)
+     * [test_find_packet_marker.py](./solutions/tests/test_find_packet_marker.py)
+ * [templates](./templates)
+   * [template_instructions.md](./templates/template_instructions.md)
+   * [template_solution.ipynb](./templates/template_solution.ipynb)
+   * [generate_challenge_files.py](./templates/generate_challenge_files.py)
+   * [generate_challenge_files.ipynb](./templates/generate_challenge_files.ipynb)
+ * [README.md](./README.md)
+ * [TODO.md](./TODO.md)
+ ```
+
+---
+
+### Descriptions of Files and Directories
+
+- `solutions/` : The solutions file contains all of the solutions for the event. Each solution is contained within its own folder, named for the day the challenge corresponds to (e.g., `day_1`...`day_25`.)
+
+- `day_n/` : Each of these directories contains:
+
+  - `instructions.md` : Instructions for the challenge, copied and pasted directly from the Advent of Code webpage for that challenge.
+
+  - `input.txt` : The input data for that challenge, again copied directly from the Advent of Code website.
+
+  - `solution.py`/`solution.ipynb` : A pure Python script or Jupyter notebook containing the code solutions. Ideally, each day will have both a `.py` solution (pure Python script) and a `.ipynb` file (Jupyter notebook) so that anyone struggling with the challenge can use an interactive Jupyter notebook to walk through the steps themselves, with extra explanation added in Markdown cells.
+
+---

@@ -1,1 +1,5 @@
 solutions/tests/
+.pytest_cache
+__pycache__
+*.pyc
+.vscode
