@@ -1,8 +1,4 @@
-# README
-
----
-
-## Python Solutions for the Advent of Code Event (2022)
+# Python Solutions for the Advent of Code Event (2022)
 
 *!! Note: This repository is still a work in progress. - 10/01/23 !!*
 
