@@ -53,7 +53,7 @@ Below is an outline of the project tree (created with the bash `tree` command - 
 
 ### Project Tree
 
-The overall structure of the project is as follows:
+The overall structure of the project is currently as follows:
 
 ```sh
 .
