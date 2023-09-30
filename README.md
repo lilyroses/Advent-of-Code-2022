@@ -57,47 +57,52 @@ The overall structure of the project is as follows:
 
 ```sh
 .
- * [solutions](./solutions)
-   * [day_2](./solutions/day_2)
-     * [input.txt](./solutions/day_2/input.txt)
-     * [instructions.md](./solutions/day_2/instructions.md)
-     * [solution.ipynb](./solutions/day_2/solution.ipynb)
-   * [day_3](./solutions/day_3)
-     * [input.txt](./solutions/day_3/input.txt)
-     * [instructions.md](./solutions/day_3/instructions.md)
-     * [solution.ipynb](./solutions/day_3/solution.ipynb)
-   * [day_4](./solutions/day_4)
-     * [input.txt](./solutions/day_4/input.txt)
-     * [instructions.md](./solutions/day_4/instructions.md)
-     * [solution.ipynb](./solutions/day_4/solution.ipynb)
-   * [day_1](./solutions/day_1)
-     * [input.txt](./solutions/day_1/input.txt)
-     * [instructions.md](./solutions/day_1/instructions.md)
-     * [solution.ipynb](./solutions/day_1/solution.ipynb)
-   * [day_5](./solutions/day_5)
-     * [input.txt](./solutions/day_5/input.txt)
-     * [instructions.md](./solutions/day_5/instructions.md)
-     * [solution.ipynb](./solutions/day_5/solution.ipynb)
-   * [day_6](./solutions/day_6)
-     * [input.txt](./solutions/day_6/input.txt)
-     * [instructions.md](./solutions/day_6/instructions.md)
-     * [solution.py](./solutions/day_6/solution.py)
-   * [day_7](./solutions/day_7)
-     * [input.txt](./solutions/day_7/input.txt)
-     * [instructions.md](./solutions/day_7/instructions.md)
-     * [solution.py](./solutions/day_7/solution.py)
-   * [tests](./solutions/tests)
-     * [__init__.py](./solutions/tests/__init__.py)
-     * [__pycache__](./solutions/tests/__pycache__)
-     * [test_day_6.py](./solutions/tests/test_day_6.py)
-     * [test_find_packet_marker.py](./solutions/tests/test_find_packet_marker.py)
- * [templates](./templates)
-   * [template_instructions.md](./templates/template_instructions.md)
-   * [template_solution.ipynb](./templates/template_solution.ipynb)
-   * [generate_challenge_files.py](./templates/generate_challenge_files.py)
-   * [generate_challenge_files.ipynb](./templates/generate_challenge_files.ipynb)
- * [README.md](./README.md)
- * [TODO.md](./TODO.md)
+├── README.md
+├── TODO.md
+├── solutions
+│   ├── __init__.py
+│   ├── __pycache__
+│   ├── day_1
+│   │   ├── input.txt
+│   │   ├── instructions.md
+│   │   └── solution.ipynb
+│   ├── day_2
+│   │   ├── input.txt
+│   │   ├── instructions.md
+│   │   └── solution.ipynb
+│   ├── day_3
+│   │   ├── input.txt
+│   │   ├── instructions.md
+│   │   └── solution.ipynb
+│   ├── day_4
+│   │   ├── input.txt
+│   │   ├── instructions.md
+│   │   └── solution.ipynb
+│   ├── day_5
+│   │   ├── input.txt
+│   │   ├── instructions.md
+│   │   └── solution.ipynb
+│   ├── day_6
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   ├── input.txt
+│   │   ├── instructions.md
+│   │   └── solution.py
+│   ├── day_7
+│   │   ├── input.txt
+│   │   ├── instructions.md
+│   │   └── solution.py
+│   └── tests
+│       ├── __init__.py
+│       ├── __pycache__
+│       ├── test_day_6.py
+│       └── test_find_packet_marker.py
+└── templates
+    ├── generate_challenge_files.ipynb
+    ├── generate_challenge_files.py
+    ├── inprogress.ipynb
+    ├── template_instructions.md
+    └── template_solution.ipynb
 ```
 
 ---
