@@ -3,3 +3,4 @@ solutions/tests/
 __pycache__
 *.pyc
 .vscode
+templates/.inprogress.ipynb
