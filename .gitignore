@@ -1,7 +1,6 @@
-solutions/tests/
 .pytest_cache
 __pycache__
 */__init__.py
 *.pyc
-.vscode
+.vscode/
 templates/.inprogress.ipynb
