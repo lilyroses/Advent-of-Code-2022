@@ -103,12 +103,20 @@ The overall structure of the project is currently as follows:
 
 - `solutions/` : The solutions file contains all of the solutions for the event. Each solution is contained within its own folder, named for the day the challenge corresponds to (e.g., `day_1`...`day_25`.)
 
-- `day_n/` : Each of these directories contains:
+- `day_{n}/` : Each of these directories contains:
 
   - `instructions.md` : Instructions for the challenge, copied and pasted directly from the Advent of Code webpage for that challenge.
 
   - `input.txt` : The input data for that challenge, again copied directly from the Advent of Code website.
 
-  - `solution.py`/`solution.ipynb` : A pure Python script or Jupyter notebook containing the code solutions. Ideally, each day will have both a `.py` solution (pure Python script) and a `.ipynb` file (Jupyter notebook) so that anyone struggling with the challenge can use an interactive Jupyter notebook to walk through the steps themselves, with extra explanation added in Markdown cells.
+  - `solution.ipynb` : An interactive Jupyter notebook containing code solutions in an interactive. Ideally, so that anyone struggling with the challenge can use an interactive Jupyter notebook to walk through the steps themselves, with extra explanation added in Markdown cells.
 
 ---
+
+## TODO
+
+- [ ] Update `generate_challenge_files.ipynb` into a pure Python module.
+- [ ] Discard/hide miscellaneous files such as the template files.
+- [ ] Redo Day 7 with original solution
+- [ ] Implement each day's solution as a pure Python module
+- [ ] Add more Markdown cells to each solution's `.ipynb` file to create a more "tutorial" style Jupyter notebook 

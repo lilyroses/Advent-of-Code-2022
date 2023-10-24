@@ -1,12 +1,16 @@
-# Day [x]: [Challenge Title] Instructions
+# Instructions for Day {n}: {TITLE}
+
+*Advent of Code {YEAR}*
 
 ---
 
 ## Links
 
-- [Homepage](https://adventofcode.com/2022)
-- [Day x Challenge](https://adventofcode.com/2022/day/[x])
-- [Input Data](https://adventofcode.com/2022/day/[x]/input)
+- [Homepage](https://adventofcode.com/{YEAR})
+
+- [Day {n} Challenge](https://adventofcode.com/{YEAR}}/day/{n})
+
+- [Input Data](https://adventofcode.com/{YEAR}/day/{n}/input)
 
 ---
 
