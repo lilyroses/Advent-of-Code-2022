@@ -1,4 +1,6 @@
-# Day 2: Rock Paper Scissors Instructions
+# Instructions for Day 2: Rock Paper Scissors
+
+*Advent of Code 2022*
 
 ---
 
@@ -8,7 +10,7 @@
 
 - [Day 2 Challenge](https://adventofcode.com/2022/day/2)
 
-- [Input Data](https://adventofcode.com/2022/day/2/input)
+- [Input Data](input.txt)
 
 ---
 
