@@ -8,9 +8,9 @@
 
 - [Homepage](https://adventofcode.com/{YEAR})
 
-- [Day {n} Challenge](https://adventofcode.com/{YEAR}}/day/{n})
+- [Day {n} Challenge](https://adventofcode.com/{YEAR}/day/{n})
 
-- [Input Data](https://adventofcode.com/{YEAR}/day/{n}/input)
+- [Input Data](input.txt)
 
 ---
 

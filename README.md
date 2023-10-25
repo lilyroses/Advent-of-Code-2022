@@ -9,9 +9,9 @@ Each challenge has its own directory, which contains the challenge description, 
 
 ---
 
-## Project Description 
+## Project Description
 
-(From the [Advent of Code website](https://adventofcode.com/day/1/) for the 2022 event):
+(From the [Advent of Code website](https://adventofcode.com/day/1/) for the 2022 event)
 
 *Santa's reindeer typically eat regular reindeer food, but they need a lot of magical energy to deliver presents on Christmas.*
 
@@ -107,7 +107,7 @@ The overall structure of the project is currently as follows:
 
   - `instructions.md` : Instructions for the challenge, copied and pasted directly from the Advent of Code webpage for that challenge.
 
-  - `input.txt` : The input data for that challenge, again copied directly from the Advent of Code website.
+  - `input.txt` : The 4\input data for that challenge, again copied directly from the Advent of Code website.
 
   - `solution.ipynb` : An interactive Jupyter notebook containing code solutions in an interactive. Ideally, so that anyone struggling with the challenge can use an interactive Jupyter notebook to walk through the steps themselves, with extra explanation added in Markdown cells.
 
@@ -119,4 +119,4 @@ The overall structure of the project is currently as follows:
 - [ ] Discard/hide miscellaneous files such as the template files.
 - [ ] Redo Day 7 with original solution
 - [ ] Implement each day's solution as a pure Python module
-- [ ] Add more Markdown cells to each solution's `.ipynb` file to create a more "tutorial" style Jupyter notebook 
+- [ ] Add more Markdown cells to each solution's `.ipynb` file to create a more "tutorial" style Jupyter notebook
