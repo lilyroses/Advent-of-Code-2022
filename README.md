@@ -169,8 +169,8 @@ The template you will use is a of Jupyter notebook with custom variables. It doe
 
 Neither of the following files need to be interacted  with. They exist soley for reference.
 
-- [template_instructions.md]
-- [template_solution.ipynb]
+- [template_instructions.md](/templates/template_instructions.md)
+- [template_solution.ipynb](/templates/template_solution.ipynb)
 
 ---
 
