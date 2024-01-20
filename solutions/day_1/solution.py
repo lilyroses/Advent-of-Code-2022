@@ -1,7 +1,7 @@
 """Solution 1 for Advent of Code 2022"""
 
-ROOT_PATH = '/home/lilyroses/code/AoC/Advent-of-Code-2022/solutions/day_1'
-INPUT_FILE = f'{ROOT_PATH}/input.txt'
+# 
+INPUT_FILE = 'input.txt'
 
 with open(INPUT_FILE, 'r', encoding='utf-8') as f:
     data = [item.strip() for item in f.readlines()]
