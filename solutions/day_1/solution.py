@@ -1,61 +1,86 @@
 """Solution 1 for Advent of Code 2022"""
 
-# My input data for the day 1 challenge 
 INPUT_FILE = 'input.txt'
- 
+
 with open(INPUT_FILE, 'r', encoding='utf-8') as f:
     lines = [line.strip() for line in f.readlines()]
 
 
 # PART I
 
-def convert_calories_to_ints(items: list[str]):
-    """Convert each non-blank line in lines from an integer type to a string
-    type.
-    """
-    converted_items = []
-
-    for item in items:
-        # A blank line indicates the end of the current elf's food list
-        if item != '':
-            converted_item = int(item)
-            converted_items.append(converted_item)
-        else:
-            # Add the blank line to the list, to indicate end of current elf's
-            # food list later on
-            converted_items.append(item)
-
-    return converted_items
-
-
-converted_lines = convert_calories_to_ints(lines)
-
-
-def create_calorie_lists(converted_items: list[int]):
-    # Create separate calorie lists from the converted lines.
-    # Append each of these calorie lists to a parent list, all_calorie_lists.
-
-    # Holds the current list of integer calorie values, using the converted_lines list.
-    # The calorie values are appended to current_calorie_list until a blank line in converted_lines
-    # is reached.
-
-    current_calorie_list = []
-    # Once a blank line in converted_lines is reached, the current calorie list ends, and is appended
-    # to all_calorie_lists. current_calorie_list is then emptied, and the next list built.
-    all_calorie_lists = []
-
-    # converted_lines contains the proper data types (ints) for the calorie value lines.
-    for converted_line in converted_lines:
-        # If the line is a not blank line, we are still building the current calorie list.
+def convert_lines(lines: list[str]):
+    converted_lines = []
+    for line in lines:
         if line != '':
-            # Add the current calorie value to the current list of calorie values.
-            current_calorie_list.append(line)
-        # If we reach a blank line, the current calorie list has ended.
+            converted_line = int(line)
+            converted_lines.append(converted_line)
         else:
-            # Append the current calorie list to a list that contains all the calorie lists.
-            all_calorie_lists.append(current_calorie_list)
-            # Reset the current calorie list, so that we can build the next calorie list.
-            current_calorie_list = []
+            converted_lines.append(line)
+    return converted_lines
 
-    # Returns the list of lists of integer values.
+
+
+
+def create_calorie_lists(converted_lines: list[int]):
+    current_calorie_list = []
+    all_calorie_lists = []
+    for line in converted_lines:
+        if line != '':
+            current_calorie_list.append(line)
+        else:
+            all_calorie_lists.append(current_calorie_list)
+            current_calorie_list = []
     return all_calorie_lists
+
+
+def find_calorie_list_totals(all_calorie_lists: list[int]):
+    calorie_totals = []
+    for calorie_list in all_calorie_lists:
+        calorie_total = sum(calorie_list)
+        calorie_totals.append(calorie_total)
+    return calorie_totals
+
+
+def find_max_calorie(calorie_totals: list[int]):
+    return max(calorie_totals)
+
+
+converted_lines = convert_lines(lines)
+all_calorie_lists = create_calorie_lists(converted_lines)
+calorie_totals = find_calorie_list_totals(all_calorie_lists)
+max_calorie = find_max_calorie(calorie_totals)
+
+answer_part_one = max_calorie
+
+
+
+# PART II
+
+sorted_calorie_totals = sorted(calorie_totals, reverse=True)
+top_three_calorie_totals = sorted_calorie_totals[0:3]
+total = sum(top_three_calorie_totals)
+
+answer_part_two = total
+
+print(f'Answer (Part I): {answer_part_one}')
+print(f'Answer (Part II): {answer_part_two}')
+
+
+# def find_max_calories(lines: list[str], sep: str = '') -> list[int]:
+#     """Find the list of foods with the maximum calories."""
+
+#     max_calories = 0
+#     current_food_list_calories = 0
+
+#     for line in lines:
+#         if line != sep:
+#             current_food_list_calories += int(line)
+#             # An empty string means the end of the list.
+#         else:
+#             if current_food_list_calories > max_calories:
+#                 max_calories = current_food_list_calories
+#             current_food_list_calories = 0
+
+#     return max_calories
+
+# print(find_max_calories(data, ''))
