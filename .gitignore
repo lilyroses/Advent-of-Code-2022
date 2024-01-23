@@ -3,4 +3,4 @@ __pycache__
 */__init__.py
 *.pyc
 .vscode/
-templates/.inprogress.ipynb
+templates/.inprogress.ipynbTODO.md
