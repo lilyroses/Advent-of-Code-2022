@@ -6,3 +6,5 @@ with open(INPUT_FILE, 'r') as f:
     lines = f.readlines()
             
 print(lines)
+
+
