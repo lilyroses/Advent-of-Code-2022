@@ -19,8 +19,6 @@ def convert_lines(lines: list[str]):
     return converted_lines
 
 
-
-
 def create_calorie_lists(converted_lines: list[int]):
     current_calorie_list = []
     all_calorie_lists = []
@@ -53,7 +51,6 @@ max_calorie = find_max_calorie(calorie_totals)
 answer_part_one = max_calorie
 
 
-
 # PART II
 
 sorted_calorie_totals = sorted(calorie_totals, reverse=True)
@@ -64,23 +61,3 @@ answer_part_two = total
 
 print(f'Answer (Part I): {answer_part_one}')
 print(f'Answer (Part II): {answer_part_two}')
-
-
-# def find_max_calories(lines: list[str], sep: str = '') -> list[int]:
-#     """Find the list of foods with the maximum calories."""
-
-#     max_calories = 0
-#     current_food_list_calories = 0
-
-#     for line in lines:
-#         if line != sep:
-#             current_food_list_calories += int(line)
-#             # An empty string means the end of the list.
-#         else:
-#             if current_food_list_calories > max_calories:
-#                 max_calories = current_food_list_calories
-#             current_food_list_calories = 0
-
-#     return max_calories
-
-# print(find_max_calories(data, ''))
