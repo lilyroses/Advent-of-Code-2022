@@ -1,9 +1,12 @@
 """Solution 2 for Advent of Code 2022"""
 
-INPUT_FILE = 'input.txt'
+INPUT_FILE = './solutions/day_2/input.txt'
 
 with open(INPUT_FILE, 'r', encoding='utf-8') as f:
-    data = [item.strip() for item in f.readlines()]
+    lines = [line.strip() for line in f.readlines()]
+
+
+# PART I
 
 LOSE = 0
 TIE = 3
@@ -24,6 +27,7 @@ MOVE_POINTS = {
     'scissors': 3
 }
 
+
 def parse_codes(codes):
     """Parse input data and return move codes."""
     game_info = []
@@ -33,9 +37,9 @@ def parse_codes(codes):
     return game_info
 
 
-game_rounds = parse_codes(codes=data)
+game_rounds = parse_codes(codes=lines)
 
-total_score = 0
+total_score_1 = 0
 
 for game_round in game_rounds:
     round_score = 0
@@ -79,5 +83,56 @@ for game_round in game_rounds:
             elif opponent_move == 'paper':
                 round_score += WIN
 
-    total_score += round_score
-print(total_score)
+    total_score_1 += round_score
+
+
+# PART II
+
+OUTCOME_CODES = {
+    'X': 'lose', 
+    'Y': 'tie',
+    'Z': 'win'
+}
+
+total_score_2 = 0
+
+for game_round in game_rounds:
+    round_score = 0
+    
+    opponent_code = game_round[0]
+    my_code = game_round[1]
+    
+    opponent_move = MOVE_CODES[opponent_code]
+    outcome_code = OUTCOME_CODES[my_code]
+    
+    # print(f'Opponent move: {opponent_move}')
+    # print(f'Outcome code: {outcome_code}')
+    if outcome_code == 'tie':
+        round_score += TIE
+        round_score += MOVE_POINTS[opponent_move]
+        
+    elif outcome_code == 'lose':
+        round_score += LOSE
+        if opponent_move == 'rock':
+            round_score += MOVE_POINTS['scissors']
+        elif opponent_move == 'paper':
+            round_score += MOVE_POINTS['rock']
+        elif opponent_move == 'scissors':
+            round_score += MOVE_POINTS['paper']
+            
+    elif outcome_code == 'win':
+        round_score += WIN
+        if opponent_move == 'rock':
+            round_score += MOVE_POINTS['paper']
+        elif opponent_move == 'paper':
+            round_score += MOVE_POINTS['scissors']
+        elif opponent_move == 'scissors':
+            round_score += MOVE_POINTS['rock'] 
+            
+    # print(round_score)                              
+    total_score_2 += round_score
+
+
+if __name__ == '__main__':
+    print(f'Answer (Part I): {total_score_1}')
+    print(f'Answer (Part II): {total_score_2}')

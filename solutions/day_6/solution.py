@@ -1,6 +1,6 @@
 """Solution for Day 6, Advent of Code 2022."""
 
-INPUT_FILE = '/home/lilyroses/code/Advent-of-Code-2022/solutions/day_6/input.txt'
+INPUT_FILE = './solutions/day_6/input.txt'
 
 with open(INPUT_FILE, 'r', encoding="utf-8") as f:
     lines = f.read()
