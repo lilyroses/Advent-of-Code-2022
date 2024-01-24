@@ -1,6 +1,7 @@
 """Solution 1 for Advent of Code 2022"""
 
-INPUT_FILE = 'input.txt'
+ROOT_DIR = '/home/lilyroses/code/projects/AoC/Advent-of-Code-2022/solutions/day_1'
+INPUT_FILE = f'{ROOT_DIR}/input.txt'
 
 with open(INPUT_FILE, 'r', encoding='utf-8') as f:
     lines = [line.strip() for line in f.readlines()]
