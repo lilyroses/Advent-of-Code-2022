@@ -60,5 +60,7 @@ total = sum(top_three_calorie_totals)
 
 answer_part_two = total
 
-print(f'Answer (Part I): {answer_part_one}')
-print(f'Answer (Part II): {answer_part_two}')
+
+if __name__ == '__main__':
+    print(f'Answer (Part I): {answer_part_one}')
+    print(f'Answer (Part II): {answer_part_two}')

@@ -39,7 +39,7 @@ def parse_codes(codes):
 
 game_rounds = parse_codes(codes=lines)
 
-total_score_1 = 0
+answer_part_1 = 0
 
 for game_round in game_rounds:
     round_score = 0
@@ -83,7 +83,7 @@ for game_round in game_rounds:
             elif opponent_move == 'paper':
                 round_score += WIN
 
-    total_score_1 += round_score
+    answer_part_1 += round_score
 
 
 # PART II
@@ -94,7 +94,7 @@ OUTCOME_CODES = {
     'Z': 'win'
 }
 
-total_score_2 = 0
+answer_part_2 = 0
 
 for game_round in game_rounds:
     round_score = 0
@@ -130,9 +130,9 @@ for game_round in game_rounds:
             round_score += MOVE_POINTS['rock'] 
             
     # print(round_score)                              
-    total_score_2 += round_score
+    answer_part_2 += round_score
 
 
 if __name__ == '__main__':
-    print(f'Answer (Part I): {total_score_1}')
-    print(f'Answer (Part II): {total_score_2}')
+    print(f'Answer (Part I): {answer_part_1}')
+    print(f'Answer (Part II): {answer_part_2}')
