@@ -1,23 +1,25 @@
 """Solution 1 for Advent of Code 2022"""
+import sys
+sys.path.append('..')
+from solutions.get_filepath import get_filepath
 
-ROOT_DIR = '/home/lilyroses/code/projects/AoC/Advent-of-Code-2022/solutions/day_1'
-INPUT_FILE = f'{ROOT_DIR}/input.txt'
+FILEPATH = get_filepath(1)
 
-with open(INPUT_FILE, 'r', encoding='utf-8') as f:
-    lines = [line.strip() for line in f.readlines()]
+with open(FILEPATH, 'r') as f:
+    lines = [line.rstrip() for line in f.readlines()]
+
+
+# with open(INPUT_FILE, 'r', encoding='utf-8') as f:
+    # lines = [line.strip() for line in f.readlines()]
 
 
 # PART I
 
-def convert_lines(lines: list[str]):
-    converted_lines = []
-    for line in lines:
-        if line != '':
-            converted_line = int(line)
-            converted_lines.append(converted_line)
-        else:
-            converted_lines.append(line)
-    return converted_lines
+def convert_calorie_strs_to_ints(lines: list[str]) -> list[int|str]:
+    """Convert lines containing calorie strings to integers. Preserve
+    all empty string placements within the list.
+    """
+    return [int(line) if line != '' else line for line in lines]
 
 
 def create_calorie_lists(converted_lines: list[int]):
@@ -44,7 +46,7 @@ def find_max_calorie(calorie_totals: list[int]):
     return max(calorie_totals)
 
 
-converted_lines = convert_lines(lines)
+converted_lines = convert_calorie_strs_to_ints(lines)
 all_calorie_lists = create_calorie_lists(converted_lines)
 calorie_totals = find_calorie_list_totals(all_calorie_lists)
 max_calorie = find_max_calorie(calorie_totals)
